@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="../images/icon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="" />
+
+    <meta name="creator" content="Flaviano Rodrigues">
+    <meta name="author" content="Flaviano Rodrigues">
+    <meta name="description" content="Sistema de reservas">
+
+    <!-- Deixei fazio ja q é uma pagina de administração -->
+    <meta name="keywords" content="" />
+
+
+    <title>Hotel | Reservas</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img width="150" src="../images/Hotel_logo.jpg">
+        </header>
+        <nav>
+            <ul>
+                <!-- Falta por os links -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Funcionários</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Hóspedes</a></li>
+            </ul>
+        </nav>
+
+        <section class="form-container">
+            <h1>Cadastre as Reservas</h1>
+            <form action="#" method="post">
+                <div class="input-container">
+                    <label for="checkin">Checkin:</label>
+                    <input type="date" name="checkin" id="checkin" required>
+                </div>
+                <div class="input-container">
+                    <label for="checkout">Checkout:</label>
+                    <input type="date" name="checkout" id="checkout" required>
+                </div>
+                <div class="input-container">
+                    <label for="adultos">Quantidade de adultos:</label>
+                    <input value="0" type="number" min="0" max="10" name="adultos" id="adultos" required>
+                </div>
+                <div class="input-container">
+                    <label for="criancas">Quantidade de Crianças:</label>
+                    <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
+                </div>
+                <div class="input-container">
+                    <input type="submit" name="acao" id="acao" value="Enviar" required>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+
+        </footer>
+    </main>
+
+</body>
+
+</html>

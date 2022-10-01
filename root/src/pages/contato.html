@@ -34,17 +34,36 @@
         <section class="form-container">
             <h1>Entre em Contato conosco !</h1>
             <form action="#" method="post">
-                <div class="input-container">
-                    <label for="username">Nome:</label>
-                    <input type="text" name="username" id="username" placeholder="Nome" required>
-                </div>
-                <div class="input-container">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
-                </div>
-                <div class="input-container">
-                    <input type="submit" name="acao" id="acao" value="Enviar" required>
-                </div>
+                <fieldset>
+                    <legend>Como podemos ajudar?</legend>
+                    <div class="input-container">
+                        <label for="username">Nome:</label>
+                        <input type="text" name="username" id="username" placeholder="Nome" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="subject">Assunto de interesse:</label>
+                        <select name="subject" id="subject">
+                            <option value="cancelamento">Cancelamento de Reserva</option>
+                            <option value="ouvidoria">Ouvidoria</option>
+                            <option value="departamento_financeiro">Departamento Financeiro</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Deixe um comentário:</label> <br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" name="acao" id="acao" value="Enviar" required>
+                    </div>
+                </fieldset>
             </form>
         </section>
 

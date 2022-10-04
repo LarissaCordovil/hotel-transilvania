@@ -10,20 +10,73 @@
 
 <body>
     <header>
-        <!--Aguardando a home-->
+        <img width="300" src="../images/Hotel_logo.jpg">
     </header>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="hospedes.html">Hóspedes</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="hospedes.html">Hóspedes</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
         </ul>
     </nav>
     <main>
         <section>
             <article>
-                <table>
-
+                <table width="80%" border="1">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Tempo de empresa</th>
+                        <th><label for="funcao">Atividade atual</label></th>
+                        <th><label for="ferias">Férias</label></th>
+                        <th><label for="afmed">Afastamento médico</label></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select name="funcao" id="funcao">
+                                <option value="selecione">Selecione</option>
+                                <option value="recepcao">Recepção</option>
+                                <option value="restaurante">Restaurante</option>
+                                <option value="garagem">Garagem</option>
+                                <option value="servicoQuarto">Serviço de Quarto</option>
+                                <option value="gerencia">Gerência</option>
+                                <option value="concierge">Concierge</option>
+                                <option value="supervisorAndar">Supervisor de Andar</option>
+                            </select>                            
+                        </td>
+                        <td><input style="accent-color:#017f36" type="radio" name="ferias0" id="sim">Sim
+                        <input checked style="accent-color:#017f36" type="radio" name="ferias0" id="nao">Não</td>
+                        <!--017f36ff-->
+                        <td><input style="accent-color:#017f36" type="radio" name="afmed0" id="sim">Sim
+                        <input checked style="accent-color:#017f36" type="radio" name="afmed0" id="nao">Não</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select name="funcao" id="funcao">
+                                <option value="selecione">Selecione</option>
+                                <option value="recepcao">Recepção</option>
+                                <option value="restaurante">Restaurante</option>
+                                <option value="garagem">Garagem</option>
+                                <option value="servicoQuarto">Serviço de Quarto</option>
+                                <option value="gerencia">Gerência</option>
+                                <option value="concierge">Concierge</option>
+                                <option value="supervisorAndar">Supervisor de Andar</option>
+                            </select>
+                        </td>
+                        <td><input style="accent-color:#017f36" type="radio" name="ferias1" id="sim">Sim
+                            <input checked style="accent-color:#017f36" type="radio" name="ferias1" id="nao">Não
+                        </td>
+                        <!--017f36ff-->
+                        <td><input style="accent-color:#017f36" type="radio" name="afmed1" id="sim">Sim
+                            <input checked style="accent-color:#017f36" type="radio" name="afmed1" id="nao">Não
+                        </td>
+                    </tr>
                 </table>
             </article>
         </section>

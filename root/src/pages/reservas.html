@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Reservas</title>
-    </head>
-    <body>
-        <main>
+
+<head>
+    <link rel="icon" href="../../images/icon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Reservas</title>
+</head>
+
+<body>
+    <main>
         <header>
-            <img src="../images/Hotel_logo.jpg" alt="logo" width="150px" >
+            <!-- Copiar e colar aqui o Header da pasta "templates" quando o mesmo estiver pronto -->
         </header>
         <nav>
             <a href="home.html">Home</a> |
             <a href="hotel.html">Hotel</a> |
             <a href="acomodacoes.html">Acomodações</a> |
             <a href="reservas.html">Reservas</a> |
-            <a href="contato.html">Contato</a> |
+            <a href="contato.html">Contato</a>
 
         </nav>
-            <section>
-                <h1>Reservas</h1>
-                <hr/>
-                <article>
-                    <h3>Reserve a sua acomodação</h3>
-                    <form action="#" method="get">
-                        <fieldset>
-                            <legend>Insira seus dados</legend>
-                            <form>
-                                <div>
-                                    <input type="text" name="username" id="username" placeholder="nome" required><br/>
-                                    <input type="email" name="email" id="email" placeholder="e-mail" required>
-                                </div>
-                                    <button>Confirmar</button>
-                            </form>
-                        </fieldset>
-                    </form>
-                </article>
-            </section>
-        </main>
-        <footer>&copy;2022 - Todos os direitos reservados.</footer>
-    </body>
+        <section>
+            <h1>Reservas</h1>
+            <hr />
+            <article>
+                <h3>Reserve a sua acomodação</h3>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Insira seus dados</legend>
+                        <form>
+                            <div class="input-container">
+                                <label for="username">Nome:</label>
+                                <input type="text" name="username" id="username" placeholder="Nome" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="tel">Telefone:</label>
+                                <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="checkin">Checkin:</label>
+                                <input type="date" name="checkin" id="checkin" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="checkout">Checkout:</label>
+                                <input type="date" name="checkout" id="checkout" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="adultos">Quantidade de adultos:</label>
+                                <input value="0" type="number" min="0" max="10" name="adultos" id="adultos" required>
+                            </div>
+                            <div class="input-container">
+                                <label for="criancas">Quantidade de Crianças:</label>
+                                <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
+                            </div>
+                            <div class="input-container">
+                                <input type="submit" name="acao" id="acao" value="Enviar">
+                            </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="nav-content">
+                <h2>Continue Navegando:</h2>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="hotel.html">Hotel</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li><a href="reservas.html">Reserva</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contacts-content">
+                <div>
+                    <h2>Contato:</h2>
+                    <p class="contact-single">Telefone: (11) 99999-9999</p>
+                    <p class="contact-single">Email: contato@hotel-transilvania.com</p>
+                </div>
+                <br />
+                <div>
+                    <h2>Endereço:</h2>
+                    <p>Alameda Santos, 960 - Cerqueira César São Paulo - SP</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-of-footer">
+            <p>&copy; 2022 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
 </html>

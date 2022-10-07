@@ -1,0 +1,91 @@
+footer {
+    background-color: var(--green-default);
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.main-footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.nav-content,
+.contacts-content {
+    width: 50%;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.contacts-content div {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-single {
+    margin-bottom: 5px;
+}
+
+footer h2 {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer nav {
+    margin-top: 15px;
+}
+
+footer nav li {
+    list-style: none;
+    margin-top: 6px;
+    padding-left: 30px;
+}
+
+footer nav a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-of-footer {
+    background-color: var(--green-dark);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-content,
+    .contacts-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer nav li {
+        padding-left: 0;
+    }
+
+    .contacts-content div {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}

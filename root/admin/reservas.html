@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="" />
+    <link rel="stylesheet" href="../src/css/app.css">
 
     <meta name="creator" content="Flaviano Rodrigues">
     <meta name="author" content="Flaviano Rodrigues">
@@ -27,10 +28,10 @@
         </header>
         <nav>
             <ul>
-                <!-- Falta por os links -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Funcionários</a></li>
-                <li><a href="#">Reservas</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="funcionarios.html">Funcionários</a></li>
+
+                <!-- Falta por o link: -->
                 <li><a href="#">Hóspedes</a></li>
             </ul>
         </nav>
@@ -38,6 +39,18 @@
         <section class="form-container">
             <h1>Cadastre as Reservas</h1>
             <form action="#" method="post">
+                <div class="input-container">
+                    <label for="username">Nome:</label>
+                    <input type="text" name="username" id="username" placeholder="Nome" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </div>
+                <div class="input-container">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                </div>
                 <div class="input-container">
                     <label for="checkin">Checkin:</label>
                     <input type="date" name="checkin" id="checkin" required>
@@ -55,16 +68,12 @@
                     <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
                 </div>
                 <div class="input-container">
-                    <input type="submit" name="acao" id="acao" value="Enviar" required>
+                    <input type="submit" name="acao" id="acao" value="Enviar">
                 </div>
             </form>
         </section>
-
-        <footer>
-
-        </footer>
     </main>
-
+    <footer></footer>
 </body>
 
 </html>

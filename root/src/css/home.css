@@ -1,0 +1,33 @@
+/* Nossas acomodações */
+.nossas-acomodacoes {
+    padding: 2rem;
+}
+.nossas-acomodacoes h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.nossas-acomodacoes figure {
+    display: flex;
+    justify-content: space-between;
+}
+.nossas-acomodacoes img{
+    width: 31%;
+}
+.nossas-acomodacoes p{
+    border: 1px solid var(--green-light);
+    margin: 1rem 0;
+    padding: 1.8rem;
+    list-style: none;
+    text-align: center;
+}
+.nossas-acomodacoes div{
+    border: 1px solid var(--green-light);
+    text-align: center;
+    padding: 0.8rem;
+}
+.nossas-acomodacoes a {
+    color: var(--font-color);
+    text-decoration: none; 
+    font-size: larger;
+    font-weight: 600;
+}

@@ -37,12 +37,12 @@
     padding: 0.5rem;
 }
 .user {  
-    width: 15vw;
+    width: 30vw;
     min-width: 100px;    
-    margin: 0 auto auto 0;
+    margin: auto;
     padding: 0.5rem;
 }
-.cadastre {    
+/* .cadastre {    
     display: flex;
     justify-content: end;
     width: 20vw;
@@ -50,7 +50,7 @@
     margin: auto 0 0 auto;
     padding: 0.5rem;
     
-}
+} */
 nav {
     background-color: var(--green-dark);
 }
@@ -68,6 +68,7 @@ nav {
 .user ul {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
 }
 .menu ul li a{
@@ -81,18 +82,19 @@ nav {
     color: #dc6620;
     text-shadow:0.04rem 0.06rem 0.08rem  var(--font-color);
 }
-.user ul li a {
+.userLink a {
     font: var(--font-secundaria);
     font-size: 0.9rem;
     color: var(--font-color);
     text-decoration: underline var(--green-default);
+    white-space: nowrap;
 
 }
-.user ul li a:hover{
+.userLink a:hover{
     color: var(--green-default);
     text-decoration: overline;
 }
-.cadastre ul li a{
+.cadastre a{
     font:var(--font-secundaria);
     font-size: 0.9rem;
     color: var(--background-color);
@@ -101,12 +103,13 @@ nav {
     padding:0.4rem;
     border: 0.08rem solid #dc6620;
     border-radius: 0.5rem;
+    white-space: nowrap;
 }
-.cadastre ul li a:hover {
+.cadastre a:hover {
     background-color: var(--green-light);
     color: var(--font-color);
     padding: 0.4rem;
     border: 0.08rem solid var(--green-dark);
     border-radius: 0.5rem;
-}
+} 
 

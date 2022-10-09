@@ -10,11 +10,14 @@
     --font-secundaria: Helvetica, sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
     font-family: var(--font-principal);
+}
+
+.container-conteudo {
+    padding: 2rem;
 }

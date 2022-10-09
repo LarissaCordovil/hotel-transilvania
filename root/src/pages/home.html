@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Hotel | Home</title>
@@ -15,58 +16,101 @@
 <body>
     <main>
         <header>
-            <!-- Copiar e colar aqui o Header da pasta "templates" quando o mesmo estiver pronto -->
+            <div class="main-header">
+                <div class="logo">
+                    <img src="../../images/Hotel_logo.jpg" alt="Hotel Transilvânia">
+                    <spam>Para viver momentos inesquecíves</spam>
+                </div>
+                <div class="right-side">
+                    <div class="user">
+                        <ul>
+                            <li>
+                                <a href="#">Olá Usuário</a>
+                            </li>
+                            <li>
+                                <a href="#">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cadastre">
+                        <ul class="links">
+                            <li>
+                                <a href="#">Cadastre-se</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="hotel.html">Hotel</a></li>
-                <li><a href="acomodacoes.html">Acomodações</a></li>
-                <li><a href="reservas.html">Reserva</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+            <div class="menu">
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="reservas.html">Reserva</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <section>
-            <article>
-                <h1>Conheça Nosso Hotel</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut officia fuga corporis illum ad eius
-                    tempore, magni animi incidunt tenetur vero. Vitae odio consequuntur animi veritatis commodi ratione.
-                    Itaque quibusdam amet repellendus sed nesciunt nostrum magnam eligendi exercitationem est molestiae
-                    consectetur dolores corrupti quod veniam error saepe cum, porro rerum. Rerum odio in tempore
-                    reprehenderit dolore ipsa. Cupiditate ab tempora, accusamus et voluptas natus unde veniam sapiente
-                    culpa sed optio laboriosam quod ratione esse nemo adipisci odit corporis minima saepe?</p>
-            </article>
-        </section>
-        <section class="nossas-acomodacoes">
-            <article>
-                <h2>Nossas Acomodações</h2>
-                <figure>
-                    <img src="../../images/acomodacao_standard.jpg" alt="foto de quarto standard com cama e tv">
-                    <img src="../../images/acomodacao_premium.jpg"
-                        alt="foto de quarto acomodacao_premium com cama e sofá">
-                    <img src="../../images/acomodacao_vip.jpg" alt="foto de quarto vip com cama e hidromassagem">
-                </figure>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil laudantium accusantium
-                    exercitationem dicta totam quidem? Doloribus obcaecati eaque mollitia illum unde, ducimus autem
-                    soluta in. Iste, consectetur totam consequatur, ipsa recusandae, qui possimus sed ad omnis illum
-                    voluptate minima porro itaque debitis asperiores? Dolorem ea accusamus at odio quas!
-                </p>
-                <div>
-                    <a href="acomodacoes.html">Conheça mais sobre nossos serviços</a>
-                </div>
+        <div class="container-conteudo">
+            <section class="conheça-nosso-hotel">
+                <article>
+                    <h1>Conheça Nosso Hotel</h1>
+                    <br />
+                    <figure>
+                        <img height="300" width="550" src="../../images/HOME2.jpg" alt="Ilustração do nosso hotel">
+                        <img height="300" width="550" src="../../images/HOME5.jpg" alt= "Ilustração do nosso hotel">
+                        <img height="300" width="550" src="../../images/HOME4.jpg" alt="Ilustração do nosso hotel">
+                    </figure>
+                    <br />                    
+                    <p> Sejam bem vindos ao Green Trip, um Hotel que exala luxo, conforto e Lazer Estamos localizado no estado de São Paulo,
+                    composto por diversas suítes e quartos. Aqui você encontra o lugar ideal para passar sua noite ou suas férias.
+                    Na area de lazer trazemos a vocês 3 piscinas, sendo uma delas infantil, temos também jacuzzi para uso dos hospedes, Area
+                    de churrasco, salão de festa, academia, sala de jogos, quadra de tênis, quadra de futebol e voleibol e sauna.
+                    Além de tudo isso, somos ricos na area gastronômica, possuímos restaurantes pelo hotel, todos com incríveis cardápios e
+                    gostos para todos tipos de paladar
+                    </p>
+                </article>
+                    <br />
+            </section>
+            <section class="nossas-acomodacoes">
+                <article>
+                    <h2>Nossas Acomodações</h2>
+                    <figure>
+                        <img src="../../images/acomodacao_standard.jpg" alt="foto de quarto standard com cama e tv">
+                        <img src="../../images/acomodacao_premium.jpg"  alt="foto de quarto acomodacao_premium com cama e sofá">
+                        <img src="../../images/acomodacao_vip.jpg" alt="foto de quarto vip com cama e hidromassagem">
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil laudantium accusantium
+                        exercitationem dicta totam quidem? Doloribus obcaecati eaque mollitia illum unde, ducimus autem
+                        soluta in. Iste, consectetur totam consequatur, ipsa recusandae, qui possimus sed ad omnis illum
+                        voluptate minima porro itaque debitis asperiores? Dolorem ea accusamus at odio quas!
+                    </p>
+                    <div>
+                        <a href="acomodacoes.html">Conheça mais sobre nossos serviços</a>
+                    </div>
 
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2>Planos e Pacotes</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo suscipit repellendus corporis eos
-                    quas. Neque fugit, at magni ullam minima, dicta delectus dolore ea animi laudantium consectetur
-                    nihil veniam sunt numquam a atque tenetur expedita.</p>
-            </article>
-        </section>
+                </article>
+            </section>
+            <section>
+                <article class="container-gastronomia">
+                    <div class="container-texto-comida">
+                        <h2>Gastronomia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo suscipit repellendus
+                            corporis eos
+                            quas. Neque fugit, at magni ullam minima, dicta delectus dolore ea animi laudantium
+                            consectetur
+                            nihil veniam sunt numquam a atque tenetur expedita.</p>
+                    </div>
+                    <div class="container-imagem-comida">
+                        <img class="imagem-comida" src="../../images/gastronomia.jpg" alt="foto café da manhã">
+                    </div>
+                </article>
+            </section>
+        </div>
 
     </main>
     <aside>

@@ -41,6 +41,7 @@ footer h2 {
 
 footer nav {
     margin-top: 15px;
+    background-color: var(--green-default);
 }
 
 footer nav li {

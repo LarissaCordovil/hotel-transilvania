@@ -5,8 +5,9 @@
     min-height: 100px;
     display: flex;
     border-bottom: 0.15rem solid #b49c21;
-        
+
 }
+
 .logo {
     width: 40vw;
     min-width: 300px;
@@ -14,53 +15,51 @@
     margin: 0 5%;
     padding: 0.5rem;
 }
-.logo img{
+
+.logo img {
     width: 20%;
     padding: 0;
     margin: 0;
     vertical-align: middle;
 
 }
+
 .logo span {
     font-family: var(--font-secundaria);
     font-size: 120%;
-    letter-spacing: 0,2rem;   
-    font-weight:bolder;
+    letter-spacing: 0, 2rem;
+    font-weight: bolder;
     white-space: nowrap;
-    padding: 0.5rem;   
+    padding: 0.5rem;
 }
-.right-side{  
+
+.right-side {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: flex-end;
     width: 45vw;
     min-width: 300px;
     margin: 0 5%;
     padding: 0.5rem;
 }
-.user {  
+
+.user {
     width: 30vw;
-    min-width: 100px;    
+    min-width: 100px;
     margin: auto;
     padding: 0.5rem;
 }
-/* .cadastre {    
-    display: flex;
-    justify-content: end;
-    width: 20vw;
-    min-width: 200px;
-    margin: auto 0 0 auto;
-    padding: 0.5rem;
-    
-} */
+
 nav {
     background-color: var(--green-dark);
 }
+
 .menu {
     margin: auto;
-    width:70%;
-    min-height: 2rem;  
+    width: 70%;
+    min-height: 2rem;
 }
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -73,17 +72,20 @@ nav {
     flex-wrap: wrap;
     list-style: none;
 }
-.menu ul li a{
-    display:inline-block;
+
+.menu ul li a {
+    display: inline-block;
     padding: 1rem 0;
     font: var(--font-secundaria);
     color: var(--background-color);
     text-decoration: none;
 }
+
 .menu ul li a:hover {
     color: #b49c21;
-    text-shadow:0.04rem 0.06rem 0.08rem  var(--font-color);
+    text-shadow: 0.04rem 0.06rem 0.08rem var(--font-color);
 }
+
 .userLink a {
     font: var(--font-secundaria);
     font-size: 0.9rem;
@@ -92,27 +94,26 @@ nav {
     white-space: nowrap;
 
 }
-.userLink a:hover{
+
+.userLink a:hover {
     color: var(--green-default);
     text-decoration: overline;
 }
-.cadastre a{
-    font:var(--font-secundaria);
+
+.cadastre a {
+    font: var(--font-secundaria);
     font-size: 0.9rem;
     color: var(--background-color);
     text-decoration: none;
     background-color: var(--green-dark);
-    padding:0.4rem;
-    /* border: 0.08rem solid #dc6620; */
-    border: 0.08rem solid #b49c21;
+    padding: 0.4rem;
     border-radius: 0.5rem;
     white-space: nowrap;
 }
+
 .cadastre a:hover {
     background-color: var(--green-light);
     color: var(--font-color);
     padding: 0.4rem;
-    border: 0.08rem solid var(--green-dark);
     border-radius: 0.5rem;
-} 
-
+}

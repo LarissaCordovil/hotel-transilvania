@@ -43,22 +43,24 @@
             <div class="menu">
                 <ul class="links">
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="hotel.html">Hotel</a></li> 
-                    <li><a href="acomodacoes.html">Acomodações</a></li> 
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
 
         </nav>
-        <section>
-            <h1>Reservas</h1>
+        <section class="container-content">
+            <div class="content-title">
+                <h1>Reserve sua acomodação</h1>
+            </div>
             <hr />
-            <article>
-                <h3>Reserve a sua acomodação</h3>
-                <form action="#" method="get">
-                    <fieldset>
-                        <legend>Insira seus dados</legend>
-                        <form>
+            <div class="container-reserva">
+                <article class="container-input-data">
+                    <form action="#" method="get">
+                        <div class="container-dados">
+                            <h4><span>Passo 1: </span>Insira seus dados</h4>
                             <div class="input-container">
                                 <label for="username">Nome:</label>
                                 <input type="text" name="username" id="username" placeholder="Nome" required>
@@ -71,6 +73,8 @@
                                 <label for="tel">Telefone:</label>
                                 <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
                             </div>
+                        </div>
+                        <div class="container-checkin">
                             <div class="input-container">
                                 <label for="checkin">Checkin:</label>
                                 <input type="date" name="checkin" id="checkin" required>
@@ -88,12 +92,79 @@
                                 <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
                             </div>
                             <div class="input-container">
-                                <!-- <input type="submit" name="acao" id="acao" value="Enviar"> -->
-                                <button>Confirmar</button>
                             </div>
-                    </fieldset>
-                </form>
-            </article>
+                        </div>
+                </article>
+                <section class="container-badroom-resume">
+                    <h4><span>Passo 2: </span>Escolha o Quarto</h4>
+                    <div class="select-badroom-resume">
+                        <section class="select-badroom">
+                            <ul>
+                                <li>
+                                    <img src="../../images/acomodacao_premium.jpg" alt="quarto premium">
+                                    <div>
+                                        <h4>Executive</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                        <div class="price-label">
+                                        <input type="radio" name="badroom" id="executive">
+                                        <label for="executive"><span>R$</span> XXX</label>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../../images/acomodacao_standard.jpg" alt="quarto clássico">
+                                    <div>
+                                        <h4>Classic</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                            <div class="price-label">
+                                        <input type="radio" name="badroom" id="classic">
+                                        <label for="classic"><span>R$</span> XXX</label>
+                                            </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../../images/acomodacao_vip.jpg" alt="quarto premium">
+                                    <div>
+                                        <h4>Premium</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                            <div class="price-label">
+                                        <input type="radio" name="badroom" id="premium">
+                                        <label for="premium"><span>R$</span> XXX</label>
+                                            </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="list-resume-checkin">
+                            <ul>
+                                <li class="check-item">
+                                    <p>Apartamento: XXX</p>
+                                </li>
+                                <li>
+                                    <p>Checkin: XXX</p>
+                                </li>
+                                <li class="check-item">
+                                    <p>Checkout: XXX</p>
+                                </li>
+                                <li>
+                                    <p>Pessoas: XXX</p>
+                                </li>
+                            </ul>
+                            <!-- <input type="submit" name="acao" id="acao" value="Enviar"> -->
+                            <button>Confirmar</button>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>

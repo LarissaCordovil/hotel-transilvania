@@ -2,7 +2,6 @@
 
 .nossas-acomodacoes h2{
     text-align: center;
-    margin-bottom: 1rem;
 }
 .nossas-acomodacoes figure {
     display: flex;
@@ -13,7 +12,6 @@
 }
 .nossas-acomodacoes p{
     border: 1px solid var(--green-light);
-    margin: 1rem 0;
     padding: 1.8rem;
     list-style: none;
     text-align: center;

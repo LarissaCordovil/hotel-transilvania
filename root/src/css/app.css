@@ -16,6 +16,7 @@
     outline: 0;
     box-sizing: border-box;
     font-family: var(--font-principal);
+    /* outline: 1px solid red !important; */
 }
 
 h1 {

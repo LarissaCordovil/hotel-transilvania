@@ -77,3 +77,58 @@
     top: -20px;
     z-index: -1;
 }
+
+
+@media screen and (max-width: 1030px) {
+
+    .container-gastronomia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-texto-comida {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-title h2 {
+        font-size: 25px;
+        max-width: 270px;
+    }
+
+    .border {
+        max-width: 320px;
+        top: -15px;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    .nossas-acomodacoes figure {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossas-acomodacoes img {
+        width: 45%;
+        min-width: 250px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width: 589px) {
+    .container-texto-comida {
+        width: 135%;
+    }
+
+    .imagem-comida {
+        max-width: 250px;
+    }
+}

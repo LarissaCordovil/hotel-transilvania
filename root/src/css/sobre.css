@@ -23,3 +23,23 @@
 .sobre-secundario img {
     height: 20vw;
 }
+
+@media screen and (max-width: 1000px) {
+
+
+    .sobre-principal {
+        text-align: center;
+    }
+
+
+    .sobre-principal p {
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sobre-principal img {
+        display: none;
+    }
+
+}

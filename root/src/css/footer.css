@@ -67,6 +67,19 @@ footer nav a:hover {
     text-align: center;
 }
 
+.contact-icons ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    list-style: none;
+}
+
+.contact-icons ul li a i {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 0.7rem;
+}
+
 @media screen and (max-width: 768px) {
     .main-footer {
         flex-direction: column;
@@ -89,16 +102,8 @@ footer nav a:hover {
         width: 100%;
     }
 
-}
-.contact-icons ul {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    list-style: none;
-}
+    .contact-icons ul {
+        margin: 0 auto
+    }
 
-.contact-icons ul li a i {
-    color: var(--background-color);
-    text-decoration: none;
-    padding: 0.7rem;
 }

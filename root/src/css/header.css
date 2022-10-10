@@ -117,3 +117,64 @@ nav {
     padding: 0.4rem;
     border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 730px) {
+
+    .main-header {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        max-height: 100px;
+        padding: 0;
+    }
+
+    .logo img {
+        width: 35%;
+    }
+
+    .logo span {
+        font-size: initial;
+        position: relative;
+        top: -25px;
+        letter-spacing: unset;
+        white-space: nowrap;
+    }
+
+    .right-side {
+        padding-bottom: 0;
+    }
+
+    .user ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        height: 70px;
+    }
+
+    .cadastre {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .menu {
+        width: 95%;
+        max-width: 350px;
+        min-height: 2rem;
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .user {
+        width: auto;
+        min-width: unset;
+    }
+}

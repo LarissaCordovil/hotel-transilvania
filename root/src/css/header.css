@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 100px;
     display: flex;
-    border-bottom: 0.1rem solid #dc6620;
+    border-bottom: 0.15rem solid #b49c21;
         
 }
 .logo {
@@ -15,7 +15,9 @@
     padding: 0.5rem;
 }
 .logo img{
-    width: 22%;
+    width: 20%;
+    padding: 0;
+    margin: 0;
     vertical-align: middle;
 
 }
@@ -79,7 +81,7 @@ nav {
     text-decoration: none;
 }
 .menu ul li a:hover {
-    color: #dc6620;
+    color: #b49c21;
     text-shadow:0.04rem 0.06rem 0.08rem  var(--font-color);
 }
 .userLink a {
@@ -101,7 +103,8 @@ nav {
     text-decoration: none;
     background-color: var(--green-dark);
     padding:0.4rem;
-    border: 0.08rem solid #dc6620;
+    /* border: 0.08rem solid #dc6620; */
+    border: 0.08rem solid #b49c21;
     border-radius: 0.5rem;
     white-space: nowrap;
 }

@@ -1,0 +1,26 @@
+.sobre-principal div {
+    display: flex;
+    justify-content: space-between;
+}
+.sobre-principal img {
+    height: 20vw;
+}
+.sobre-principal p {
+    padding: 1.8rem;
+}
+.sobre-secundario {
+    margin-top: 4rem;
+}
+.sobre-secundario figure {
+    display: flex;
+    justify-content: space-between;
+}
+.sobre-secundario img {
+    height: 20vw;
+}
+.nav-content ul{
+    display: flex;
+}
+.nav-content img {
+    height: 4vw;
+}

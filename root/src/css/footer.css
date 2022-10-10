@@ -90,3 +90,15 @@ footer nav a:hover {
     }
 
 }
+.contact-icons ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    list-style: none;
+}
+
+.contact-icons ul li a i {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 0.7rem;
+}

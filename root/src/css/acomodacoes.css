@@ -79,6 +79,27 @@
     font-weight: 500;
     letter-spacing: 0.1rem;
 }
+.imagens {
+    display: flex;   
+}
+
+.imagens figure {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.imagens figure img {
+    width: 80%;
+    margin: 0 auto;
+}
+.imagens figure figcaption {
+    margin-bottom: 1rem;
+}
+
 .tipos details {
     margin: 1.5rem 1rem 1.5rem 0;
 }
@@ -90,7 +111,7 @@
 .vip {
     border:none !important;
 }
-.tipos figure {
+.tipos > figure {
     padding-bottom: 1rem;
     border-bottom: 0.09rem solid var(--green-dark);
 }
@@ -101,7 +122,7 @@
 }
 
 .tipos ul {
-    padding: 0 4rem;
+    padding: 0 0 1rem 4rem;
     text-align: justify;
 }
 .content-destaque{

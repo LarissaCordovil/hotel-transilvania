@@ -1,44 +1,134 @@
-/* Nossas acomodações */
-
-.nossas-acomodacoes h2{
+.nossas-acomodacoes h2 {
     text-align: center;
-    margin-bottom: 1rem;
 }
+
 .nossas-acomodacoes figure {
     display: flex;
     justify-content: space-between;
 }
-.nossas-acomodacoes img{
+
+.nossas-acomodacoes img {
     width: 31%;
 }
-.nossas-acomodacoes p{
+
+.nossas-acomodacoes p {
     border: 1px solid var(--green-light);
-    margin: 1rem 0;
     padding: 1.8rem;
     list-style: none;
     text-align: center;
 }
-.nossas-acomodacoes div{
+
+.nossas-acomodacoes div {
     border: 1px solid var(--green-light);
     text-align: center;
     padding: 0.8rem;
 }
+
 .nossas-acomodacoes a {
     color: var(--font-color);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: larger;
     font-weight: 600;
 }
+
 .imagem-comida {
     width: 300px;
     margin: 0 auto;
 }
+
 .container-gastronomia {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 4rem;
 }
+
 .container-texto-comida {
     width: 500px;
+}
+
+.content-conheca-nosso-hotel {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-title {
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.content-title h2 {
+    text-align: center;
+    font-size: 35px;
+    background-color: white;
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.border {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1030px) {
+
+    .container-gastronomia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-texto-comida {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-title h2 {
+        font-size: 25px;
+        max-width: 270px;
+    }
+
+    .border {
+        max-width: 320px;
+        top: -15px;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    .nossas-acomodacoes figure {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossas-acomodacoes img {
+        width: 45%;
+        min-width: 250px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width: 589px) {
+    .container-texto-comida {
+        width: 135%;
+    }
+
+    .imagem-comida {
+        max-width: 250px;
+    }
 }

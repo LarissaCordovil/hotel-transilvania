@@ -1,5 +1,7 @@
+.produto-destaque,
 .nossas-acomodacoes {
     background-color: rgba(0, 0, 0, 0.04);
+
 }
 
 .content-title {
@@ -7,6 +9,7 @@
     padding-top: 20px;
 }
 
+.produto-destaque h2,
 .nossas-acomodacoes h2 {
     text-align: center;
     font-size: 35px;
@@ -39,11 +42,181 @@
     border-radius: 5px;
 }
 
+.nossas-acomodacoes h3 {
+    text-align: center;
+    margin: auto;
+    font-size: 35px;
+}
+
+.nossas-acomodacoes h4 {
+    display: inline;
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.imagens {
+    display: flex;
+}
+
+.imagens figure {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.imagens figure img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imagens figure figcaption {
+    margin-bottom: 1rem;
+}
+
+.tipos details {
+    margin: 1.5rem 1rem 1.5rem 0;
+}
+
+.tipos details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.tipos>figure {
+    padding-bottom: 1rem;
+    border-bottom: 0.09rem solid var(--green-dark);
+}
+
+.tipos>figure:last-child {
+    border: none;
+}
+
+.tipos p {
+    margin: 1rem;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.tipos ul {
+    padding: 0 0 1rem 4rem;
+    text-align: justify;
+}
+
+.content-destaque {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto-destaque h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #F5F5F5;
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto 1rem auto;
+}
+
+.galery {
+    display: inline-block;
+    width: 47%;
+    height: 320px;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: carrousel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+    border-radius: 5px;
+}
+
+@keyframes carrousel {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+}
+
+.destaque {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0 2rem;
+    width: 45%;
+    text-align: justify;
+}
+
+.destaque ul {
+    margin-left: 1rem;
+    padding: 1rem;
+    line-height: 1.35rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .content-destaque {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .galery,
+    .destaque {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .nossas-acomodacoes figure img {
         width: 45%;
     }
 
+    .imagens {
+        display: none;
+    }
 
     .nossas-acomodacoes h2 {
         font-size: 25px;
@@ -57,16 +230,26 @@
 
 }
 
+@media screen and (max-width: 520px) {
+    .galery {
+        max-width: 300px;
+        height: 190px;
+    }
+
+    .destaque {
+        max-width: 300px;
+        padding: 0 5px;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
     .nossas-acomodacoes figure img {
         width: 95%;
     }
 
+    .tipos p {
+        padding: 0;
+    }
+
 }
-
-.nossas-acomodacoes h3 {
-    text-align: center;
-    margin: auto;
-    font-size: 35px;
-}   
-

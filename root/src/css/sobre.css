@@ -1,0 +1,45 @@
+.sobre-principal div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-principal img {
+    height: 20vw;
+}
+
+.sobre-principal p {
+    padding: 1.8rem;
+}
+
+.sobre-secundario {
+    margin-top: 4rem;
+}
+
+.sobre-secundario figure {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-secundario img {
+    height: 20vw;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .sobre-principal {
+        text-align: center;
+    }
+
+
+    .sobre-principal p {
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sobre-principal img {
+        display: none;
+    }
+
+}

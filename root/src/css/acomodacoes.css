@@ -86,13 +86,14 @@
     cursor: pointer;
 }
 
-.vip {
-    border: none !important;
-}
 
 .tipos>figure {
     padding-bottom: 1rem;
     border-bottom: 0.09rem solid var(--green-dark);
+}
+
+.tipos>figure:last-child {
+    border: none;
 }
 
 .tipos p {
@@ -138,6 +139,7 @@
 
 .galery .fotos img {
     width: 19.9%;
+    border-radius: 5px;
 }
 
 @keyframes carrousel {

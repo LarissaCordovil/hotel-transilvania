@@ -1,0 +1,70 @@
+body {
+    background-color: var(--background-color);
+}
+
+.container-conteudo h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 40px 0px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-container input, .form-container select, .form-container textarea {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
+}
+
+.form-container input:focus, .form-container select:focus, .form-container textarea:focus {
+    border: 2px solid var(--green-dark)
+}
+
+
+.form-container label {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+fieldset button {
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--green-dark);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+

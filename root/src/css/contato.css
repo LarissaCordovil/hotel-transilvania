@@ -24,11 +24,14 @@ fieldset legend {
 .input-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.form-container input, .form-container select, .form-container textarea {
+.form-container input,
+.form-container select,
+.form-container textarea {
     padding: 15px;
     width: 100%;
     margin-bottom: 35px;
@@ -39,7 +42,9 @@ fieldset legend {
     box-shadow: 5px 5px 5px #a0a0a0ea;
 }
 
-.form-container input:focus, .form-container select:focus, .form-container textarea:focus {
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
     border: 2px solid var(--green-dark)
 }
 
@@ -66,5 +71,3 @@ fieldset button {
     width: fit-content;
     margin: 0 auto;
 }
-
-

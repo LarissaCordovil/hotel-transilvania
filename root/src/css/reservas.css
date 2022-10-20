@@ -1,19 +1,13 @@
 .container-content {
     background-color: var(--background-color);
-    padding: 32px;
 }
 
-.content-title {
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-
-h1 {
+/* h1 {
     text-align: center;
     font-size: 35px;
     width: fit-content;
     margin: 0 auto;
-}
+} */
 
 h3 {
     font-size: 1.5rem;
@@ -125,6 +119,7 @@ h4 span {
 .select-badroom img {
     width: 30%;
     margin-right: 30px;
+    border-radius: 0.313rem
 }
 
 .select-badroom h4,
@@ -150,13 +145,12 @@ h4 span {
 }
 
 .list-resume-checkin {
-    color: #fff;
     padding: 30px;
     height: fit-content;
-    background-color: var(--green-dark);
+    background-color: var(--background-color);
     text-transform: uppercase;
-    border-radius: 8px;
-    border: none;
+    border-radius: 0.5rem;
+    border: solid 1px var(--green-default);
     box-shadow: 5px 5px 5px #a0a0a0ea;
     display: flex;
     flex-direction: column;
@@ -173,17 +167,21 @@ h4 span {
 }
 
 button {
-    padding: 15px;
+    padding: 0.9rem;;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
     border: none;
-    background-color: var(--background-color);
-    color: var(--green-dark);
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    background-color: var(--green-default);
+    color: var(--background-color);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     width: fit-content;
-    margin-top: 40px;
+    margin-top: 2rem;
+}
+button:hover {
+    background-color:  var(--green-dark);
 }
 
 @media screen and (max-width:1150px) {

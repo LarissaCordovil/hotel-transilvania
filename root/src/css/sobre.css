@@ -1,10 +1,11 @@
 .sobre-principal div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .sobre-principal img {
     height: 20vw;
+    border-radius: 0.313rem
 }
 
 .sobre-principal p {
@@ -12,7 +13,24 @@
 }
 
 .sobre-secundario {
+    text-align: center;
     margin-top: 4rem;
+}
+.sobre-secundario h2 {
+    width: fit-content;
+    margin: 0.83rem auto;
+    background-color: #fff;
+    padding: 0 1rem;
+}
+.border {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: -45px;
+    z-index: -1;
 }
 
 .sobre-secundario figure {
@@ -22,6 +40,7 @@
 
 .sobre-secundario img {
     height: 20vw;
+    border-radius: 0.313rem
 }
 
 @media screen and (max-width: 1000px) {

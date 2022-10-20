@@ -59,15 +59,20 @@ fieldset legend {
 }
 
 fieldset button {
-    padding: 15px;
+    padding: 0.9rem;;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: none;
-    background-color: var(--green-dark);
+    background-color: var(--green-default);
     color: white;
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     width: fit-content;
     margin: 0 auto;
+    border: none;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
+}
+fieldset button:hover {
+    background-color:  var(--green-dark);
 }

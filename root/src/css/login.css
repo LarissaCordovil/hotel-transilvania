@@ -27,11 +27,11 @@ body {
 }
 
 .input-container input, button{
-    padding: 15px;
+    padding: 1rem;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 1.8rem;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: none;
     box-shadow: 5px 5px 5px #a0a0a0ea;
 }
@@ -39,8 +39,8 @@ body {
 .form-container button{
     background-color: var(--green-default);
     color: #fff;
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     width: 50%;
     min-width: fit-content;

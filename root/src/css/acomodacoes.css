@@ -1,22 +1,14 @@
-.produto-destaque,
-.nossas-acomodacoes {
-    background-color: rgba(0, 0, 0, 0.04);
-
-}
-
 .content-title {
     margin-bottom: 30px;
     padding-top: 20px;
 }
 
-.produto-destaque h2,
-.nossas-acomodacoes h2 {
+.produto-destaque h2 {
     text-align: center;
-    font-size: 35px;
-    background-color: #F5F5F5;
-    width: 100%;
-    max-width: 370px;
+    padding: 0 1rem;
+    background-color: #fff;
     margin: 0 auto;
+    width: fit-content;
 }
 
 .border {
@@ -26,27 +18,27 @@
     height: 2px;
     background-color: #000;
     position: relative;
-    top: -20px;
+    top: -14px;
     z-index: -1;
 }
 
 .nossas-acomodacoes figure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nossas-acomodacoes figure img {
     width: 30%;
     margin-bottom: 25px;
-    border-radius: 5px;
+    border-radius: 0.313rem
 }
 
-.nossas-acomodacoes h3 {
+/* .nossas-acomodacoes h3 {
     text-align: center;
     margin: auto;
     font-size: 35px;
-}
+} */
 
 .nossas-acomodacoes h4 {
     display: inline;
@@ -56,6 +48,7 @@
 }
 
 .imagens {
+    padding: 2rem 0;
     display: flex;
 }
 
@@ -63,7 +56,7 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     margin: 1rem auto;
 }
@@ -114,11 +107,11 @@
 
 .produto-destaque h3 {
     text-align: center;
-    font-size: 1.5rem;
-    background-color: #F5F5F5;
+    /* font-size: 1.5rem;
+    background-color: #fff;
     width: 100%;
     max-width: 370px;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem auto; */
 }
 
 .galery {
@@ -127,6 +120,7 @@
     height: 320px;
     overflow: hidden;
     padding: 1rem 0;
+    border-radius: 0.313rem
 }
 
 .galery .fotos {
@@ -139,7 +133,7 @@
 
 .galery .fotos img {
     width: 19.9%;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 @keyframes carrousel {

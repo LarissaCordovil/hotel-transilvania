@@ -37,7 +37,7 @@ section {
     margin: 0 auto;
     box-shadow: 5px 5px 5px #a0a0a0ea;
 }
-.nossas-acomodacoes div:hover {
+.nossas-acomodacoes .conheca-acomodacoes:hover {
     background-color:  var(--green-dark);
 }
 
@@ -68,7 +68,7 @@ section {
     text-align: center;
 }
 
-h2 {
+.container-conteudo h2 {
     text-align: center;
     background-color: white;
     width: fit-content;

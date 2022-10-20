@@ -1,4 +1,7 @@
-.nossas-acomodacoes h2 {
+section {
+    padding: 0 0 1.2rem 0;
+}
+.nossas-acomodacoes h2, article h2 {
     text-align: center;
 }
 
@@ -9,43 +12,55 @@
 
 .nossas-acomodacoes img {
     width: 31%;
+    border-radius: 0.313rem;
 }
 
-.nossas-acomodacoes p {
-    border: 1px solid var(--green-light);
+.nossas-acomodacoes p, .container-gastronomia p {
     padding: 1.8rem;
     list-style: none;
     text-align: center;
 }
 
-.nossas-acomodacoes div {
-    border: 1px solid var(--green-light);
+.nossas-acomodacoes .conheca-acomodacoes {
     text-align: center;
-    padding: 0.8rem;
+    padding: 1rem;
+    padding: 0.9rem;;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--green-default);
+    color: var(--background-color);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
+}
+.nossas-acomodacoes div:hover {
+    background-color:  var(--green-dark);
 }
 
 .nossas-acomodacoes a {
-    color: var(--font-color);
+    color: var(--background-color);
     text-decoration: none;
-    font-size: larger;
     font-weight: 600;
 }
 
 .imagem-comida {
     width: 300px;
     margin: 0 auto;
+    border-radius: 0.313rem;
 }
 
 .container-gastronomia {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 4rem;
+   display: flex;
+   align-items: center;
 }
 
-.container-texto-comida {
+/* .container-texto-comida {
     width: 500px;
-}
+} */
 
 .content-conheca-nosso-hotel {
     width: 90%;
@@ -53,20 +68,13 @@
     text-align: center;
 }
 
-.content-title {
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-
-.content-title h2 {
+h2 {
     text-align: center;
-    font-size: 35px;
     background-color: white;
-    width: 100%;
-    max-width: 370px;
-    margin: 0 auto;
+    width: fit-content;
+    margin: 0.83rem auto;
+    padding: 0 1rem;
 }
-
 .border {
     width: 100%;
     max-width: 480px;
@@ -74,10 +82,9 @@
     height: 2px;
     background-color: #000;
     position: relative;
-    top: -20px;
+    top: -45px;
     z-index: -1;
 }
-
 
 @media screen and (max-width: 1030px) {
 
@@ -102,7 +109,7 @@
 
     .border {
         max-width: 320px;
-        top: -15px;
+        top: -45px;
     }
 
 }
@@ -120,14 +127,13 @@
         margin-bottom: 20px;
         border-radius: 5px;
     }
+    .container-gastronomia article {
+        flex-direction: column;
+     }
 
 }
 
 @media screen and (max-width: 589px) {
-    .container-texto-comida {
-        width: 135%;
-    }
-
     .imagem-comida {
         max-width: 250px;
     }

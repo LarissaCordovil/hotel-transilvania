@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-    <link rel="icon" href="../../images/icon.png" />
+    <link rel="icon" href="../../images/dom_favicon-32x32.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/sobre.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hotel | Sobrer</title>
+    <title>DOM Hotel | Sobrer</title>
 </head>
 
 <body>
     <header>
         <div class="main-header">
             <div class="logo">
-                <img src="../../images/icon.png" alt="DOM Hotel">
+                <img src="../../images/dom_logo.png" alt="DOM Hotel">
                 <span>Para viver momentos inesquecíves</span>
             </div>
             <div class="right-side">
@@ -45,16 +45,19 @@
                 <li><a href="acomodacoes.html">Acomodações</a></li>
                 <li><a href="reservas.html">Reserva</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </div>
     </nav>
-    <main class="container-conteudo">
+    <main class="container-content">
         <section class="container-sobre">
-            <article class="sobre-principal">
+            <div class="content-title">
                 <h1>Quem somos</h1>
+            </div>
+            <article class="sobre-principal">   
+                <div><img src="../../images/quem_somos.jpg" alt=""></div>             
                 <div>
-                    <img src="../../images/quem_somos.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint ea voluptas modi placeat ipsam
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint ea voluptas modi placeat ipsam
                         accusamus doloremque illum nisi adipisci beatae officia, error, quibusdam omnis eius illo iste
                         itaque at facere! Veritatis magnam dolorem saepe hic iusto in provident error officiis
                         voluptatibus! Culpa labore animi assumenda nihil voluptatum omnis doloribus tenetur incidunt,
@@ -65,11 +68,14 @@
                 </div>
             </article>
             <article class="sobre-secundario">
-                <h2>Nossos resultados</h2>
+                <div class="content-title">
+                    <h2>Nossos resultados</h2>
+                </div>
+                <div class="border"></div>
                 <figure>
-                    <img src="../../images/premio_2021.webp" alt="prêmio tripadvisor">
-                    <img src="../../images/premio_2019.jpg" alt="prêmio zarpo 2019">
-                    <img src="../../images/selo-turismo.png" alt="selo de turismo responsável">
+                    <div><img src="../../images/premio_2021.webp" alt="prêmio tripadvisor"></div>                    
+                    <div><img src="../../images/premio_2019.jpg" alt="prêmio zarpo 2019"></div>
+                    <div><img src="../../images/selo-turismo.png" alt="selo de turismo responsável"></div>
                 </figure>
             </article>
         </section>

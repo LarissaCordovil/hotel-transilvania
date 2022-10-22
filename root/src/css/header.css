@@ -71,6 +71,7 @@ nav {
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
+    align-items: center;
 }
 
 .menu ul li a {
@@ -101,19 +102,22 @@ nav {
 }
 
 .cadastre a {
-    font: var(--font-secundaria);
+    padding: 0.9rem;
     font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
     color: var(--background-color);
     text-decoration: none;
-    background-color: var(--green-dark);
+    background-color: var(--green-default);
     padding: 0.4rem;
     border-radius: 0.5rem;
+    border: none;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
     white-space: nowrap;
 }
 
 .cadastre a:hover {
-    background-color: var(--green-light);
-    color: var(--font-color);
+    background-color:  var(--green-dark);
     padding: 0.4rem;
     border-radius: 0.5rem;
 }

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" href="../../images/icon.png" />
+    <link rel="icon" href="../../images/dom_favicon-32x32.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="../css/footer.css">
 
 
-    <title>Hotel | Contato</title>
+    <title>DOM Hotel | Contato</title>
 </head>
 
 <body>
     <header>
         <div class="main-header">
             <div class="logo">
-                <img src="../../images/icon.png" alt="DOM Hotel">
+                <img src="../../images/dom_logo.png" alt="DOM Hotel">
                 <span>Para viver momentos inesquecíves</span>
             </div>
             <div class="right-side">
@@ -53,29 +53,31 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="acomodacoes.html">Acomodações</a></li>
                 <li><a href="reservas.html">Reserva</a></li>
+                <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <div class="container-conteudo">
+        <div class="container-content">
             <section class="form-container">
-                <h1>Entre em Contato conosco !</h1>
-                <hr>
+                <div class="content-title">
+                    <h1>Entre em contato conosco</h1>
+                </div>
                 <form action="#" method="post">
                     <fieldset>
-                        <legend>Como podemos ajudar?</legend>
+                        <legend class="content-title">Como podemos ajudar?</legend>
                         <div class="input-container">
                             <label for="username">Nome:</label>
-                            <input type="text" name="username" id="username" placeholder="Nome" required>
+                            <input type="text" name="username" id="username" required>
                         </div>
                         <div class="input-container">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="E-mail" required>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="input-container">
                             <label for="tel">Telefone:</label>
-                            <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                            <input type="tel" name="tel" id="tel" required>
                         </div>
                         <div class="input-container">
                             <label for="subject">Assunto de interesse:</label>
@@ -91,7 +93,7 @@
                         </div>
                         <div class="input-container">
                             <!-- <input type="submit" name="acao" id="acao" value="Enviar" required> -->
-                            <button>Confirmar</button>
+                            <button class="green-button">Confirmar</button>
                         </div>
                     </fieldset>
                 </form>

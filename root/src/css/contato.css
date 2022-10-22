@@ -1,14 +1,6 @@
-body {
-    background-color: var(--background-color);
-}
-
-.container-conteudo h1 {
+/* .container-conteudo h1 {
     text-align: center;
-}
-
-hr {
-    margin: 40px 0px;
-}
+} */
 
 fieldset {
     border: none;
@@ -32,21 +24,22 @@ fieldset legend {
 .form-container input,
 .form-container select,
 .form-container textarea {
-    padding: 15px;
+    margin-bottom: 2rem;
+    /* padding: 15px;
     width: 100%;
     margin-bottom: 35px;
     margin-top: 5px;
     text-transform: uppercase;
     border-radius: 8px;
     border: none;
-    box-shadow: 5px 5px 5px #a0a0a0ea;
+    box-shadow: 5px 5px 5px #a0a0a0ea; */
 }
 
-.form-container input:focus,
+/* .form-container input:focus,
 .form-container select:focus,
 .form-container textarea:focus {
     border: 2px solid var(--green-dark)
-}
+} */
 
 
 .form-container label {
@@ -59,15 +52,22 @@ fieldset legend {
 }
 
 fieldset button {
-    padding: 15px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--green-dark);
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    width: fit-content;
     margin: 0 auto;
 }
+    /* padding: 0.9rem;;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--green-default);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    width: fit-content;
+
+    border: none;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
+}
+fieldset button:hover {
+    background-color:  var(--green-dark);
+} */

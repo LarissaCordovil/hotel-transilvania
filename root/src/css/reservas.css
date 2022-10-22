@@ -1,6 +1,6 @@
-.container-content {
+/* .container-content {
     background-color: var(--background-color);
-}
+} */
 
 /* h1 {
     text-align: center;
@@ -9,27 +9,27 @@
     margin: 0 auto;
 } */
 
-h3 {
+/* h3 {
     font-size: 1.5rem;
     margin: 45px auto;
 
-}
+} */
 
-h3,
+/* h3,
 h4 {
     color: var(--green-dark);
     text-transform: uppercase;
     font-weight: 700;
-}
+} */
 
-h4 {
+/* h4 {
     font-size: 1.3rem;
     color: var(--font-color);
     margin: 30px 0px;
     align-self: flex-start;
-}
+} */
 
-h4 span {
+h3 span {
     color: var(--green-dark);
 }
 
@@ -42,8 +42,8 @@ h4 span {
 }
 
 .container-input-data {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
 }
 
@@ -73,15 +73,18 @@ h4 span {
 }
 
 .container-input-data div input {
-    padding: 15px;
-    width: 100%;
+    /* padding: 15px;
+    width: 100%; */
     margin-bottom: 35px;
     margin-top: 5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     border-radius: 8px;
-    border: none;
-    box-shadow: 5px 5px 5px #a0a0a0ea;
+    box-shadow: 5px 5px 5px #a0a0a0ea; */
 }
+
+/* .container-input-data div input:focus {
+    border: 2px solid var(--green-dark)
+} */
 
 .container-checkin {
     display: flex;
@@ -116,15 +119,21 @@ h4 span {
     border: none;
 }
 
+.select-badroom li input{
+    width: fit-content;
+    border: none;
+    box-shadow: none;
+}
+
 .select-badroom img {
     width: 30%;
     margin-right: 30px;
-    border-radius: 0.313rem
+    /* border-radius: 0.313rem */
 }
 
 .select-badroom h4,
 .select-badroom p {
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 10px;
 }
 
@@ -147,10 +156,10 @@ h4 span {
 .list-resume-checkin {
     padding: 30px;
     height: fit-content;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     text-transform: uppercase;
     border-radius: 0.5rem;
-    border: solid 1px var(--green-default);
+    border: solid 2px var(--green-dark);
     box-shadow: 5px 5px 5px #a0a0a0ea;
     display: flex;
     flex-direction: column;
@@ -167,7 +176,7 @@ h4 span {
 }
 
 button {
-    padding: 0.9rem;;
+    /* padding: 0.9rem;;
     text-transform: uppercase;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 5px #a0a0a0ea;
@@ -177,12 +186,12 @@ button {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    width: fit-content;
+    width: fit-content; */
     margin-top: 2rem;
 }
-button:hover {
+/* button:hover {
     background-color:  var(--green-dark);
-}
+} */
 
 @media screen and (max-width:1150px) {
     .select-badroom li {

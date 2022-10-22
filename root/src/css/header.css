@@ -71,6 +71,7 @@ nav {
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
+    align-items: center;
 }
 
 .menu ul li a {

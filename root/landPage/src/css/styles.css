@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.container-height {
+  min-height: 100vh;
+}
+
 .container-principal {
   display: flex;
   flex-direction: column;

@@ -1,44 +1,166 @@
-/* Nossas acomodações */
-
-.nossas-acomodacoes h2{
-    text-align: center;
-    margin-bottom: 1rem;
+/* section {
+    padding: 0 0 1.2rem 0;
 }
+.nossas-acomodacoes h2, article h2 {
+    text-align: center;
+} */
+
 .nossas-acomodacoes figure {
     display: flex;
     justify-content: space-between;
 }
-.nossas-acomodacoes img{
+
+.nossas-acomodacoes img {
     width: 31%;
+    /* border-radius: 0.313rem; */
 }
-.nossas-acomodacoes p{
-    border: 1px solid var(--green-light);
-    margin: 1rem 0;
+
+/* .nossas-acomodacoes p, .container-gastronomia p {
     padding: 1.8rem;
     list-style: none;
     text-align: center;
-}
-.nossas-acomodacoes div{
-    border: 1px solid var(--green-light);
+} */
+
+/* .nossas-acomodacoes .conheca-acomodacoes {
     text-align: center;
-    padding: 0.8rem;
+    padding: 1rem;
+    padding: 0.9rem;;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--green-default);
+    color: var(--background-color);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
 }
+.nossas-acomodacoes .conheca-acomodacoes:hover {
+    background-color:  var(--green-dark);
+} */
+
 .nossas-acomodacoes a {
-    color: var(--font-color);
-    text-decoration: none; 
-    font-size: larger;
     font-weight: 600;
 }
+
 .imagem-comida {
     width: 300px;
-    margin: 0 auto;
 }
+
 .container-gastronomia {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 4rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; 
+    align-items: center;
+    gap: 5%;
 }
+
+/* .container-gastronomia {
+   display: flex;
+   align-items: center;
+}
+
+.container-gastronomia div {
+    width: 50%;
+}
+
 .container-texto-comida {
+    width: 70%;
+}
+
+.container-imagem-comida{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* .container-texto-comida {
     width: 500px;
+} */
+
+/* .content-conheca-nosso-hotel {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+.container-conteudo h2 {
+    text-align: center;
+    background-color: white;
+    width: fit-content;
+    margin: 0.83rem auto;
+    padding: 0 1rem;
+} */
+/* .border {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: -45px;
+    z-index: -1;
+} */
+
+@media screen and (max-width: 1030px) {
+
+    .container-gastronomia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-gastronomia div {
+        width: 100%;
+    }
+    
+
+    .container-texto-comida {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container-imagem-comida{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-title h2 {
+        font-size: 25px;
+        max-width: 270px;
+    }
+
+    .border {
+        max-width: 320px;
+        top: -45px;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    .nossas-acomodacoes figure {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossas-acomodacoes img {
+        width: 45%;
+        min-width: 250px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .container-gastronomia article {
+        flex-direction: column;
+     }
+
+}
+
+@media screen and (max-width: 589px) {
+    .imagem-comida {
+        max-width: 250px;
+    }
 }

@@ -16,8 +16,123 @@
     outline: 0;
     box-sizing: border-box;
     font-family: var(--font-principal);
+    /* outline: 1px solid red !important; */
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.67rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 1.17rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 1, 33rem 0;
+    color: var(--green-dark);
+    font-weight: bold;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    border-radius: 10px;
+}
+
+hr {
+    margin: 10px 0px;
+    border: 1px solid var(--green-dark)
+}
+
+input,
+textarea,
+select {
+    border: 2px solid transparent;
+    background-color: rgba(204, 204, 204, 0.12);
+    padding: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px #a0a0a0ea;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid var(--green-dark);
 }
 
 .container-conteudo {
     padding: 2rem;
+}
+
+.container-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.content-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 96px;
+}
+
+.content-title h1:first-child {
+    margin-top: 0;
+}
+
+.content-title h1:after,
+.content-title h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 3px solid black;
+    width: 70px;
+}
+
+.description {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.link {
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.green-button {
+    background-color: var(--green-default);
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
+    min-width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.green-button:hover {
+    background-color: var(--green-dark);
 }

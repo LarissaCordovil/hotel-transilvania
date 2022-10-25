@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/app.css">
-    <link rel="stylesheet" href="../src/css/login.css">
+    <link rel="stylesheet" href="./src/css/app.css">
+    <link rel="stylesheet" href="./src/css/login.css">
     <title>Hotel | transilvânia</title>
 </head>
 
@@ -16,13 +16,14 @@
             <img width="300" src="../images/Hotel_logo.jpg" alt="logo" id="logo-img">
         </header> -->
         <section class="form-container">
-            <h1>Login</h1>
-            <form class="flex" action="../src/pages/home.html" method="get">
+            <h1 class="content-title">Login</h1>
+            <form class="flex" action="./src/pages/home.html" method="get">
                 <div class="input-container">
                     <input type="text" name="name" id="name" placeholder="Nome" required>
                     <input type="email" name="email" id="email" placeholder="E-mail" required>
                 </div>
-                <button>Confirmar</button>
+                <button class="green-button">Confirmar</button>
+                <a class="link" href="#">Esqueceu sua senha ?</a>
             </form>
         </section>
     </main>

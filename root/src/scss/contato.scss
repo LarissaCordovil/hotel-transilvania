@@ -1,0 +1,66 @@
+@import 'extends';
+
+$widthInputs: f.px-to-rem(600px);
+$largeInputs: false;
+
+
+@if $largeInputs {
+    $widthInputs: 100%;
+}
+
+@else {
+    $widthInputs: f.px-to-rem(600px);
+}
+
+.formContainer {
+
+    &__fieldset {
+        @include mx.defaultFieldset;
+
+        &_legend {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 80px;
+        }
+
+        &__inputContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: $widthInputs;
+            margin: v.$marginAuto;
+        }
+
+
+    }
+
+    label {
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+}
+
+$inputContainers: 'input', 'input', 'input', 'select', 'textarea', 'button';
+
+@each $inputSingle in $inputContainers {
+    .formContainer__fieldset__inputContainer {
+
+        #{$inputSingle} {
+            @extend %defaultInputs;
+        }
+
+        @if($inputSingle =='textarea') {
+            #{$inputSingle} {
+                resize: none;
+            }
+        }
+
+        @else if($inputSingle =='button') {
+            #{$inputSingle} {
+                margin: v.$marginAuto;
+            }
+        }
+    }
+}

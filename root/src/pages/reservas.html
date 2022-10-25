@@ -2,18 +2,20 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="icon" href="../../images/icon.png" />
+    <link rel="icon" href="../../images/dom_favicon-32x32.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reservas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Reservas</title>
+    <title>DOM Hotel | Reservas</title>
 </head>
 
 <body>
+<<<<<<< HEAD
     <main>
         <header>
             <div class="main-header">
@@ -35,42 +37,67 @@
                             </li>
                         </ul>
                     </div>
+=======
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <img src="../../images/dom_logo.png" alt="DOM Hotel">
+                <span>Para viver momentos inesquecíves</span>
+            </div>
+            <div class="right-side">
+                <div class="user">
+                    <ul>
+                        <li class="userLink">
+                            <a href="#">Olá Usuário</a>
+                        </li>
+                        <li class="userLink">
+                            <a href="#">Sair</a>
+                        </li>
+                        <li class="cadastre">
+                            <a href="#">Cadastre-se</a>
+                        </li>
+                    </ul>
+>>>>>>> aff13ecd6a4b3384af93033dc6514e36f510d1b9
                 </div>
             </div>
-        </header>
-        <nav>
-            <div class="menu">
-                <ul class="links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="hotel.html">Hotel</a></li> 
-                    <li><a href="acomodacoes.html">Acomodações</a></li> 
-                    <li><a href="reservas.html">Reservas</a></li> 
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="menu">
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="acomodacoes.html">Acomodações</a></li>
+                <li><a href="reservas.html">Reserva</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
 
-        </nav>
-        <section>
-            <h1>Reservas</h1>
-            <hr />
-            <article>
-                <h3>Reserve a sua acomodação</h3>
-                <form action="#" method="get">
-                    <fieldset>
-                        <legend>Insira seus dados</legend>
-                        <form>
+    </nav>
+    <main>
+        <section class="container-content">
+            <div class="content-title">
+                <h1>Reserve sua acomodação</h1>
+            </div>
+            <div class="container-reserva">
+                <article class="container-input-data">
+                    <form action="#" method="get">
+                        <div class="container-dados">
+                            <h3><span>Passo 1: </span>Insira seus dados</h3>
                             <div class="input-container">
                                 <label for="username">Nome:</label>
-                                <input type="text" name="username" id="username" placeholder="Nome" required>
+                                <input type="text" name="username" id="username" required>
                             </div>
                             <div class="input-container">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="input-container">
                                 <label for="tel">Telefone:</label>
-                                <input type="tel" name="tel" id="tel" placeholder="Telefone" required>
+                                <input type="tel" name="tel" id="tel" required>
                             </div>
+                        </div>
+                        <div class="container-checkin">
                             <div class="input-container">
                                 <label for="checkin">Checkin:</label>
                                 <input type="date" name="checkin" id="checkin" required>
@@ -88,12 +115,79 @@
                                 <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
                             </div>
                             <div class="input-container">
-                                <!-- <input type="submit" name="acao" id="acao" value="Enviar"> -->
-                                <button>Confirmar</button>
                             </div>
-                    </fieldset>
-                </form>
-            </article>
+                        </div>
+                </article>
+                <section class="container-badroom-resume">
+                    <h3><span>Passo 2: </span>Escolha o Quarto</h3>
+                    <div class="select-badroom-resume">
+                        <section class="select-badroom">
+                            <ul>
+                                <li>                                    
+                                    <img src="../../images/acomodacao_standard.jpg" alt="quarto clássico">
+                                    <div>
+                                        <h4>Standard</h4>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                        <div class="price-label">
+                                            <input type="radio" name="badroom" id="executive">
+                                            <label for="executive"><span>R$</span> XXX</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../../images/acomodacao_premium.jpg" alt="quarto premium">
+                                    <div>
+                                        <h4>Premium</h4>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                        <div class="price-label">
+                                            <input type="radio" name="badroom" id="classic">
+                                            <label for="classic"><span>R$</span> XXX</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../../images/acomodacao_vip.jpg" alt="quarto VIP">
+                                    <div>
+                                        <h4>VIP</h4>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore
+                                            hic
+                                            nemo! Quam consequuntur ex rem, similique esse totam recusandae, ea voluptas
+                                            neque vitae amet sapiente impedit sint cum!</p>
+                                        <div class="price-label">
+                                            <input type="radio" name="badroom" id="premium">
+                                            <label for="premium"><span>R$</span> XXX</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="list-resume-checkin">
+                            <ul>
+                                <li class="check-item">
+                                    <p>Apartamento: XXX</p>
+                                </li>
+                                <li>
+                                    <p>Checkin: XXX</p>
+                                </li>
+                                <li class="check-item">
+                                    <p>Checkout: XXX</p>
+                                </li>
+                                <li>
+                                    <p>Pessoas: XXX</p>
+                                </li>
+                            </ul>
+                            <!-- <input type="submit" name="acao" id="acao" value="Enviar"> -->
+                            <button class="green-button">Confirmar</button>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
@@ -113,8 +207,19 @@
             <div class="contacts-content">
                 <div>
                     <h2>Contato:</h2>
-                    <p class="contact-single">Telefone: (11) 99999-9999</p>
+                    <p class="contact-single">Telefone: (11) 99999-9999 <i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></p>
                     <p class="contact-single">Email: contato@hotel-transilvania.com</p>
+                    <p class="contact-single">Siga-nos nas redes sociais:</p>
+                    <div class="contact-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <br />
                 <div>

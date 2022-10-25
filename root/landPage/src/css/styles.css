@@ -99,5 +99,28 @@ body {
     padding: 2rem;
   }
 }
+.logo img {
+  height: 20vh;
+  padding: 1rem;
+}
+
+.slogan {
+  background-color: rgba(3, 140, 51, 0.5960784314);
+  padding: 1rem 2rem;
+  width: 80%;
+  position: absolute;
+  top: 60vh;
+  font-family: "Roboto", sans-serif;
+  color: #F2F2F2;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container-background {
+  height: 100vh;
+  background-image: url(../../media/banner_hotel_alta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=styles.css.map */

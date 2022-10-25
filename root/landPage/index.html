@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DOM Hotel | Oferta especial</title>
 </head>
+
 <body>
     <header class="container-height">
         <div class="container-basic container-background">
@@ -27,21 +29,33 @@
                     <h2 class="titles offer">Reveillon com estilo no DOM Hotel</h2>
                     <div class="container-grid">
                         <div class="container-media">
-                            <video width="80%" controls autoplay source src="../landPage/media/video_beach.mp4" type="video/mp4"></video>
+                            <video width="80%" muted loop autoplay source src="../landPage/media/video_beach.mp4"
+                                type="video/mp4"></video>
                         </div>
-                        <p class="text text-right">Já imaginou você e sua família encerrando o ano em um lugar paradisíaco como esse?<br><br>
-                            Serão 4 dias incríveis no melhor hotel da região com todo conforto, lazer e diversão para dar boas vindas ao ano que se inicia!<br><br>
-                            Disfrute de praias deslumbrates, passeios de barco, práticas de mergulho e vistas encantadoras. Você também vai se deliciar com as maravilhas de nossa gastronomia!<br><br>
-                            Venha conhecer nossas instalações. Quartos confortáveis com vistas e tirar o fôlego, academia, salão de jogos, quadra poliesportiva, área de lazer infantil, piscina e muito mais! Temos a melhor equipe para lhe atender e transformar a sua estadia em momentos inesquecíveis!
+                        <p class="text text-right">Já imaginou você e sua família encerrando o ano em um lugar
+                            paradisíaco como esse?<br><br>
+                            Serão 4 dias incríveis no melhor hotel da região com todo conforto, lazer e diversão para
+                            dar boas vindas ao ano que se inicia!<br><br>
+                            Disfrute de praias deslumbrates, passeios de barco, práticas de mergulho e vistas
+                            encantadoras. Você também vai se deliciar com as maravilhas de nossa gastronomia!<br><br>
+                            Venha conhecer nossas instalações. Quartos confortáveis com vistas e tirar o fôlego,
+                            academia, salão de jogos, quadra poliesportiva, área de lazer infantil, piscina e muito
+                            mais! Temos a melhor equipe para lhe atender e transformar a sua estadia em momentos
+                            inesquecíveis!
                         </p>
                     </div>
-                        <h3 class="titles plus">Quer mais?</h3>
+                    <h3 class="titles plus">Quer mais?</h3>
                     <div class="container-grid bg-01">
-                            <p class="text text-left">O DOM Hotel preparou um presente muito especial para você: que tal passar a virada do ano curtindo a nossa Festa de Reveillon que acontece no meio do mar!<br><br>Bem vindo a bordo do DOM Navio! Aqui seu 2023 já começa super especial! Se encante com a espetacular queima de fogos vista do mar, estourando champagne ao som de boa música ao vivo!<br><br>
-                            Será uma noite inesquecível cheia de emoções e surpresas feitas especialmente para você e sua família!<br><br>
+                        <p class="text text-left">O DOM Hotel preparou um presente muito especial para você: que tal
+                            passar a virada do ano curtindo a nossa Festa de Reveillon que acontece no meio do
+                            mar!<br><br>Bem vindo a bordo do DOM Navio! Aqui seu 2023 já começa super especial! Se
+                            encante com a espetacular queima de fogos vista do mar, estourando champagne ao som de boa
+                            música ao vivo!<br><br>
+                            Será uma noite inesquecível cheia de emoções e surpresas feitas especialmente para você e
+                            sua família!<br><br>
                             <strong>Vista sua roupa branca e embarque nessa aventura!</strong>
-                            
-                            </p>
+
+                        </p>
                         <div class="container-media">
                             <img src="../landPage/media/header-bg.jpg" alt="Champagne no barco">
                         </div>
@@ -51,7 +65,7 @@
         </section>
         <section id="beneficios" class="container-height">
             <article>
-        
+
             </article>
         </section>
         <section id="contato" class="container-height">
@@ -61,7 +75,7 @@
                     <li><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
                 </ul>
-        
+
             </article>
         </section>
 
@@ -71,31 +85,33 @@
             <form>
                 <fieldset>
                     <legend>Entre em contato e reserve:</legend>
-                    <ul class="list-01">
-                        <li>
-                            <label for="nome">Seu nome</label><br>
-                            <input type="text" name="nome" id="nome">
-                        </li>
-                        <li>
-                            <label for="e-mail">Seu melhor e-mail</label><br>
-                            <input type="email" name="e-mail" id="e-mail">
-                        </li>
-                        <li>
-                            <label for="phone">Seu telefone</label><br>
-                            <input type="number" name="phone" id="phone">
-                        </li>
-                    </ul>
+                    <div class="container-basic-inputContainer">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="container-basic-inputContainer">
+                        <label for="e-mail">Seu melhor e-mail:</label>
+                        <input type="email" name="e-mail" id="e-mail">
+                    </div>
+                    <div class="container-basic-inputContainer">
+                        <label for="phone">Seu telefone:</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="container-basic-inputContainer">
+                        <button>ENVIAR</button>
+                    </div>
                 </fieldset>
             </form>
             <nav>
                 <ul class="list-01">
-                    <li><a href="#oferta"></a>Oferta</li>
-                    <li><a href="#beneficios"></a>Benefícios</li>
-                    <li><a href="#contato"></a>Contato</li>
+                    <li><a href="#oferta">Oferta</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

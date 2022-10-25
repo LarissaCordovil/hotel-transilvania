@@ -1,0 +1,31 @@
+@use "oferta.scss" as of;
+
+$background-slogan: #038c3398;
+$pd-1: 1rem;
+$pd-2: 1rem 2rem;
+$mg-1: 0 auto;
+$font-size-banner: 2rem;
+
+.logo {
+    & img  {
+        height: 20vh;
+        padding: $pd-1; 
+    }
+}
+.slogan {
+    background-color: $background-slogan;
+    padding: $pd-2;
+    width: 80%;
+    position: absolute;
+    top: 60vh;
+    font-family: of.$font-principal;
+    color: of.$background-color;
+    font-size: $font-size-banner;
+    font-weight: 600;
+}
+.container-background {
+    height: 100vh;
+    background-image: url(../../media/banner_hotel_alta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

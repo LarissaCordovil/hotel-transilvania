@@ -11,6 +11,13 @@ $hContent: 80px;
 $hHeader: 60px;
 $defaultSpace: 10px;
 
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #benefits {
     margin: $zero;
     padding: $zero;

@@ -14,9 +14,9 @@ body {
     margin:0;
 }
 
-// .container-height {
-//     height: 100vh;
-// }
+.container-height {
+    min-height: 100vh;
+}
 
 .container-principal {
     display: flex;
@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .container-grid {
     display:grid;
     grid-template-columns: 60% 40%;
@@ -72,7 +73,7 @@ body {
 .text {
     margin:0 auto;
     padding: 0.7rem;
-    font: $font-secundaria;
+    font-family: $font-secundaria;
     text-align: justify;
     line-height: 1.4rem;
 }

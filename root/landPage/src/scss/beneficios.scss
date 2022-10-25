@@ -1,0 +1,93 @@
+@use "oferta" as offer;
+$zero: 0;
+$bradius: 5px;
+$containerPad: 20px 20px 0px;
+$contentPad: 10px 10px 0px;
+$containerWidth: 1000px;
+$bg: offer.$green-dark;
+$bgHeaderItem: rgb(241, 241, 241);
+$svgSize: 15px;
+$hContent: 80px;
+$hHeader: 60px;
+$defaultSpace: 10px;
+
+#benefits {
+    margin: $zero;
+    padding: $zero;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: offer.$font-principal;
+    background-color: $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-container {
+    padding: $containerPad;
+    max-width: $containerWidth;
+    width: 100%;
+}
+
+.item-header {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-left: $defaultSpace;
+    padding-right: $defaultSpace;
+    height: $hHeader;
+    background-color: $bgHeaderItem;
+    border-radius: $bradius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item-svg {
+    width: $svgSize;
+    height: $svgSize;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+
+.item-content {
+    width: 100%;
+    background-color: $bgHeaderItem;
+    border-radius: $bradius;
+    padding: $contentPad;
+    height: $zero;
+    transition-duration: 0.2s;
+    transition-property: all;
+    opacity: $zero;
+    margin-bottom: $defaultSpace;
+
+    p {
+        display: none;
+    }
+}
+
+.item-checkbox {
+    display: none;
+    cursor: pointer;
+}
+
+.item-checkbox:checked + label + .item-content{
+    border-top-left-radius: $zero;
+    border-top-right-radius: $zero;
+    height: $hContent;
+    opacity: 1;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.item-checkbox:checked + label{
+    border-bottom-left-radius: $zero;
+    border-bottom-right-radius: $zero;
+
+    .item-svg {
+        transform: rotate(180deg);
+    }
+}

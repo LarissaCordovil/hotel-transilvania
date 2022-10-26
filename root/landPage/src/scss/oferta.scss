@@ -50,7 +50,7 @@ body {
 }
 
 .titles {
-    font: $font-principal;
+    font-family: $font-principal;
 }
 
 .offer {
@@ -73,7 +73,7 @@ body {
 .text {
     margin:0 auto;
     padding: 0.7rem;
-    font: $font-secundaria;
+    font-family: $font-secundaria;
     text-align: justify;
     line-height: 1.4rem;
 }

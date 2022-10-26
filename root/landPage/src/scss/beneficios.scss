@@ -1,7 +1,7 @@
 @use "oferta" as offer;
 $zero: 0;
 $bradius: 5px;
-$containerPad: 20px 20px 0px;
+$containerPad: 100px 20px;
 $contentPad: 10px 10px 0px;
 $containerWidth: 1000px;
 $bg: offer.$green-dark;
@@ -10,6 +10,19 @@ $svgSize: 15px;
 $hContent: 80px;
 $hHeader: 60px;
 $defaultSpace: 10px;
+
+.containerWH2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #benefits {
     margin: $zero;

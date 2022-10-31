@@ -136,3 +136,17 @@ select:focus {
 .green-button:hover {
     background-color: var(--green-dark);
 }
+
+.validLabel {
+    display: none;
+}
+
+.invalidLabel {
+    margin-left: 10px;
+    display: block;
+    color: rgb(247, 89, 89);
+}
+
+.validLabel, .invalidLabel {
+    font-size: 14px;
+}

@@ -18,9 +18,19 @@
         <section class="form-container">
             <h1 class="content-title">Login</h1>
             <form class="flex" action="./src/pages/home.html" method="get">
-                <div class="input-container">
-                    <input type="text" name="name" id="name" placeholder="Nome" required>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <div id="input-container" class="input-container">
+                    <div class="error-label-container">
+                        <label for="name" class="validLabel"></label>
+                        <input type="text" name="name" id="name" placeholder="Nome">
+                    </div>
+                    <div class="error-label-container">
+                        <label for="email" class="validLabel"></label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="error-label-container">
+                        <label for="password" class="validLabel"></label>
+                        <input type="password" name="password" id="password" placeholder="Senha">
+                    </div>
                 </div>
                 <button class="green-button">Confirmar</button>
                 <a class="link" href="#">Esqueceu sua senha ?</a>
@@ -28,6 +38,7 @@
         </section>
     </main>
     <!-- <footer></footer> -->
+    <script type="module" src="src/js/login.js"></script>
 </body>
 
 </html>

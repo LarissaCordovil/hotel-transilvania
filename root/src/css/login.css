@@ -14,6 +14,8 @@ body {
 }
 
 .form-container{
+    width: 80vw;
+    max-width: 500px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #a0a0a0ea;
@@ -25,7 +27,21 @@ body {
     font-size: 2.5rem;
 }
 
-input, button {
+.input-container, .error-label-container{
+    width: 100%;
+}
+
+.error-label-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 25px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
     margin-bottom: 25px;
 }
 

@@ -95,3 +95,16 @@ footer {
 
 
 }
+
+@media (max-width: 820px) {
+    footer {
+        fieldset {
+            input {
+                width: 85%;
+            }
+        button {
+            width: 92%;
+        }
+        }
+    }
+}

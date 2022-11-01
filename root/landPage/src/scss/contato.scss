@@ -59,3 +59,19 @@ $font-secundaria: Helvetica,
         font-size: 6rem;
     }
 }
+
+@media (max-width: 820px) {
+    .contatos {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card-contato {
+        width: 80%;
+        margin: 2rem 0 ;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}

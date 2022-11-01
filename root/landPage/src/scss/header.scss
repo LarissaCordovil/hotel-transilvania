@@ -29,3 +29,10 @@ $font-size-banner: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media (max-width: 820px) {
+    .slogan {
+        top: 50vh;
+    }
+}

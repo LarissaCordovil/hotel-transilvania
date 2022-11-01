@@ -104,3 +104,9 @@ $defaultSpace: 10px;
         transform: rotate(180deg);
     }
 }
+
+@media (max-width: 820px) {
+    .benefits-container {
+        width: 80%;
+    }
+}

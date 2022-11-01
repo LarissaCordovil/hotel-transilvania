@@ -28,8 +28,13 @@ const emptyField = (value, label) => {
     return
 }
 
+const clearValue = (dirtyValue) => {
+    const cleanValue = dirtyValue.replace(/'/g, "").replace(/"/g, "").trim()
+    return cleanValue
+}
+
 const handleField = (event) => {
-    const value = event.target.value;
+    const value = clearValue(event.target.value)
     const label = event.target.labels[0]
     switch (event.target.name) {
         case "name":

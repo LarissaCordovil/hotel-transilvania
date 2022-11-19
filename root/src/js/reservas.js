@@ -87,9 +87,13 @@ const sendForm = () => {
             let selected = Object.entries(data).find(item => item[1].checked)
 
             document.getElementById('result-apartamento').textContent = `Apartamento: ${selected[1].label}`
+            localStorage.setItem('apto', `${selected[1].label}`)
             document.getElementById('result-checkin').textContent = `Checkin: ${convertDate(data.checkin.data)}`
+            localStorage.setItem('checkin', `${convertDate(data.checkin.data)}`)
             document.getElementById('result-checkout').textContent = `Checkout: ${convertDate(data.checkout.data)}`
+            localStorage.setItem('checkout', `${convertDate(data.checkout.data)}`)
             document.getElementById('result-pessoas').textContent = `Pessoas: ${data.adultos + data.criancas}`
+            localStorage.setItem('numPessoas', `${data.adultos + data.criancas}`)
 
             window.localStorage.setItem('reserva', JSON.stringify({ ...data, selected: selected[1].label }))
 

@@ -35,7 +35,7 @@ const handleModal = event => {
 
 labels.map(label => label.onclick = label => handleLabelModal(label));
 
-btnConfirmServices.addEventListener('click', handleModal);;
+btnConfirmServices.addEventListener('click', handleModal);
 
 // PARTE DE DEBORA //
 
@@ -57,7 +57,6 @@ window.onload = () =>{
     }
 
     services.map(element => {
-        const keyObj = element
         if (localStorage.getItem(`service-${element}`) !== null && localStorage.getItem(`service-${element}`) !== NaN) {
             document.getElementById(element).setAttribute('checked', 'true')
         }

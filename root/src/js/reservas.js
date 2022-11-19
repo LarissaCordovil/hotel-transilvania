@@ -69,9 +69,9 @@ const sendForm = () => {
             checkout: { data: checkout.value, validation: parseInt(checkout.value.replaceAll('-', '')) },
             adultos: parseInt(adultos.value),
             criancas: parseInt(criancas.value),
-            executive: { checked: document.getElementById('executive').checked, label: 'Executive' },
-            classic: { checked: document.getElementById('classic').checked, label: 'Classic' },
-            premium: { checked: document.getElementById('premium').checked, label: 'Premium' },
+            executive: { checked: document.getElementById('executive').checked, val: 120, label: 'Executive', file: '../../images/acomodacao_standard.jpg' },
+            classic: { checked: document.getElementById('classic').checked, val: 160, label: 'Classic', file: '../../images/acomodacao_premium.jpg' },
+            premium: { checked: document.getElementById('premium').checked, val: 200, label: 'Premium', file: '../../images/acomodacao_vip.jpg' },
         }
 
         if (data.checkin.validation < hoje || data.checkout.validation < hoje) {
@@ -86,22 +86,49 @@ const sendForm = () => {
         } else {
             let selected = Object.entries(data).find(item => item[1].checked)
 
-            document.getElementById('result-apartamento').textContent = `Apartamento: ${selected[1].label}`
-            localStorage.setItem('apto', `${selected[1].label}`)
-            document.getElementById('result-checkin').textContent = `Checkin: ${convertDate(data.checkin.data)}`
-            localStorage.setItem('checkin', `${convertDate(data.checkin.data)}`)
-            document.getElementById('result-checkout').textContent = `Checkout: ${convertDate(data.checkout.data)}`
-            localStorage.setItem('checkout', `${convertDate(data.checkout.data)}`)
-            document.getElementById('result-pessoas').textContent = `Pessoas: ${data.adultos + data.criancas}`
-            localStorage.setItem('numPessoas', `${data.adultos + data.criancas}`)
+            document.querySelectorAll('.result-apartamento').forEach(single => {
+                single.textContent = `Apartamento: ${selected[1].label}`
+            })
+
+            document.querySelector('.card-img-top').src = selected[1].file
+
+            document.querySelectorAll('.result-checkin').forEach(single => {
+                single.textContent = `Checkin: ${convertDate(data.checkin.data)}`
+            })
+
+            document.querySelectorAll('.result-checkout').forEach(single => {
+                single.textContent = `Checkout: ${convertDate(data.checkout.data)}`
+            })
+
+            document.querySelectorAll('.result-pessoas').forEach(single => {
+                single.textContent = `Pessoas: ${data.adultos + data.criancas}`
+            })
 
             window.localStorage.setItem('reserva', JSON.stringify({ ...data, selected: selected[1].label }))
 
-            alert('Reserva realizada com sucesso!')
+            const servicos = [{ label: 'mordomo', desc: 'Serviço de mordomo' }, { label: 'cofre', desc: 'Cofre no quarto' }, { label: 'pet', desc: "Hospedagem para pet's" }, { label: 'cafe', desc: 'Incluso café da manhã no quarto' }, { label: 'massagem', desc: 'Cadeira de massagem no quarto' }, { label: 'ac', desc: 'Ar condicionado no talo!!!' }]
+
+            document.querySelector('.content-servicos-extras').innerHTML = ''
+            for (let i = 0; i < servicos.length; i++) {
+                let item = localStorage.getItem(`service-${servicos[i].label}`)
+
+                if (item !== null && item !== NaN) {
+                    document.querySelector('.content-servicos-extras').innerHTML += `
+                        <li class="list-group-item ">${servicos[i].desc}: R$ ${item}</li>
+                    `
+                }
+            }
+
+            let total = parseFloat(localStorage.getItem('totalServices').split('R$:')[1]) + (selected[1].val * (data.adultos + data.criancas))
+            document.getElementById('total-services-modal').textContent = `Total: R$ ${total}`
+
+
+            const modal = new bootstrap.Modal(document.getElementById('confirmChekin'))
+            modal.show()
+
         }
 
     })
-
 
     checkin.value = formatDate(0)
     checkout.value = formatDate(30)

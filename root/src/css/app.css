@@ -45,7 +45,7 @@ p {
     margin: 1rem 0;
 }
 
-img {
+img:not(.modal img) {
     border-radius: 10px;
 }
 
@@ -147,6 +147,7 @@ select:focus {
     color: rgb(247, 89, 89);
 }
 
-.validLabel, .invalidLabel {
+.validLabel,
+.invalidLabel {
     font-size: 14px;
 }

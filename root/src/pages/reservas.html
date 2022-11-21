@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/reservas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>DOM Hotel | Reservas</title>
@@ -59,7 +60,7 @@
             </div>
             <div class="container-reserva">
                 <article class="container-input-data">
-                    <form action="#" method="get">
+                    <form id="form-reserva" method="post">
                         <div class="container-dados">
                             <h3><span>Passo 1: </span>Insira seus dados</h3>
                             <div class="input-container">
@@ -72,7 +73,7 @@
                             </div>
                             <div class="input-container">
                                 <label for="tel">Telefone:</label>
-                                <input type="tel" name="tel" id="tel" required>
+                                <input maxlength="11" type="tel" name="tel" id="tel" required>
                             </div>
                         </div>
                         <div class="container-checkin">
@@ -86,11 +87,11 @@
                             </div>
                             <div class="input-container">
                                 <label for="adultos">Quantidade de adultos:</label>
-                                <input value="0" type="number" min="0" max="10" name="adultos" id="adultos" required>
+                                <input value="1" type="number" min="1" max="5" name="adultos" id="adultos" required>
                             </div>
                             <div class="input-container">
                                 <label for="criancas">Quantidade de Crianças:</label>
-                                <input value="0" type="number" min="0" max="10" name="criancas" id="criancas" required>
+                                <input value="0" type="number" min="0" max="2" name="criancas" id="criancas" required>
                             </div>
                             <div class="input-container">
                             </div>
@@ -112,7 +113,7 @@
                                             neque vitae amet sapiente impedit sint cum!</p>
                                         <div class="price-label">
                                             <input type="radio" name="badroom" id="executive">
-                                            <label for="executive"><span>R$</span> XXX</label>
+                                            <label id="executive-label" for="executive"><span>R$</span> 120,00</label>
                                         </div>
                                     </div>
                                 </li>
@@ -127,7 +128,7 @@
                                             neque vitae amet sapiente impedit sint cum!</p>
                                         <div class="price-label">
                                             <input type="radio" name="badroom" id="classic">
-                                            <label for="classic"><span>R$</span> XXX</label>
+                                            <label id="classic-label" for="classic"><span>R$</span> 160,00</label>
                                         </div>
                                     </div>
                                 </li>
@@ -142,7 +143,7 @@
                                             neque vitae amet sapiente impedit sint cum!</p>
                                         <div class="price-label">
                                             <input type="radio" name="badroom" id="premium">
-                                            <label for="premium"><span>R$</span> XXX</label>
+                                            <label id="premium-label" for="premium"><span>R$</span> 200,00</label>
                                         </div>
                                     </div>
                                 </li>
@@ -163,24 +164,25 @@
                                         </div>
                                         <div class="modal-body">
                                             <ul class="list-modal" id="list-modal">
-                                                <li><label><input type="checkbox" name="mordomo" id="">Serviço de
+                                                <li><label><input type="checkbox" name="mordomo" id="mordomo">Serviço de
                                                         mordomo</label><span class="value-service">R$
                                                         <span>150,00</span></span></li>
-                                                <li><label><input type="checkbox" name="cofre" id="">Cofre no
+                                                <li><label><input type="checkbox" name="cofre" id="cofre">Cofre no
                                                         quarto</label><span class="value-service">R$
                                                         <span>156,35</span></span></li>
-                                                <li><label><input type="checkbox" name="pet" id="">Hospedagem para
+                                                <li><label><input type="checkbox" name="pet" id="pet">Hospedagem para
                                                         pet's</label><span class="value-service">R$
                                                         <span>150,00</span></span></li>
-                                                <li><label><input type="checkbox" name="cafe" id="">Incluso café da
+                                                <li><label><input type="checkbox" name="cafe" id="cafe">Incluso café da
                                                         manhã no
                                                         quarto</label><span class="value-service">R$
                                                         <span>150,00</span></span></li>
-                                                <li><label><input type="checkbox" name="massagem" id="">Cadeira de
+                                                <li><label><input type="checkbox" name="massagem" id="massagem">Cadeira
+                                                        de
                                                         massagem no
                                                         quarto</label><span class="value-service">R$
                                                         <span>150,00</span></span></li>
-                                                <li><label><input type="checkbox" name="ac" id="">Ar condicionado no
+                                                <li><label><input type="checkbox" name="ac" id="ac">Ar condicionado no
                                                         talo!!!</label><span class="value-service">R$
                                                         <span>150,00</span></span></li>
                                             </ul>
@@ -196,16 +198,16 @@
                         <section class="list-resume-checkin">
                             <ul>
                                 <li class="check-item">
-                                    <p>Apartamento: XXX</p>
+                                    <p class="result-apartamento">Apartamento: XXX</p>
                                 </li>
                                 <li>
-                                    <p>Checkin: XXX</p>
+                                    <p class="result-checkin">Checkin: XXX</p>
                                 </li>
                                 <li class="check-item">
-                                    <p>Checkout: XXX</p>
+                                    <p class="result-checkout">Checkout: XXX</p>
                                 </li>
                                 <li>
-                                    <p>Pessoas: XXX</p>
+                                    <p class="result-pessoas">Pessoas: XXX</p>
                                 </li>
                                 <li class="check-item">
                                     <p>Serviços adicionais: <span id="services-text">0</span></p>
@@ -260,7 +262,48 @@
             <p>&copy; 2022 - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmChekin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Resumo da Reserva:
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <img src="../../images/acomodacao_vip.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title result-apartamento"></h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse tempore hic nemo!
+                                Quam consequuntur ex rem,
+                                similique esse totam recusandae, ea voluptas neque vitae amet sapiente impedit sint cum!
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item result-apartamento"></li>
+                            <li class="list-group-item result-checkin"></li>
+                            <li class="list-group-item result-checkout"></li>
+                            <li class="list-group-item result-pessoas"></li>
+                            <div class="content-servicos-extras">
+
+                            </div>
+                        </ul>
+                        <div class="card-body">
+                            <h6 id="total-services-modal"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../js/reserva.js"></script>
+    <script type="module" src="../js/reservas.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">

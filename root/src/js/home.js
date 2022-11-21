@@ -1,6 +1,21 @@
 const storage = window.localStorage
 const form = document.getElementById('form-cadastrar-clientes')
 
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+    ].join('')
+
+    alertPlaceholder.append(wrapper)
+}
+
+
 const alreadyLogged = () => {
     const modal = new bootstrap.Modal(document.getElementById('randomImagesModal'))
     const div = document.querySelector('.image-in-modal')
@@ -39,8 +54,11 @@ form.addEventListener('submit', (a) => {
 
     if (data.nome !== '' && data.email !== '') {
         let clientes = JSON.parse(storage.getItem('clientes')) || []
-        console.log(clientes)
         storage.setItem('clientes', JSON.stringify([...clientes, data]))
+
+        alert('Conta criada com sucesso!', 'success')
+        form.reset()
+
     } else {
         alert('Preencha os campos obrigatórios')
     }

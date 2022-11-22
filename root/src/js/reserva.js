@@ -39,18 +39,20 @@ btnConfirmServices.addEventListener('click', handleModal);
 
 // PARTE DE DEBORA //
 
+
 window.onload = () =>{
-    if(localStorage.getItem('apto')){
-        document.getElementById('result-apartamento').textContent = `Apartamento: ${localStorage.getItem('apto')}`
+    const reserva = JSON.parse(localStorage.getItem('reserva')) || {};
+    if(reserva.selected){
+        document.querySelector('.result-apartamento').textContent = `Apartamento: ${reserva.selected}`
     }
-    if(localStorage.getItem('checkin')){
-        document.getElementById('result-checkin').textContent = `Checkin: ${localStorage.getItem('checkin')}`
+    if(reserva.checkin.data){
+        document.querySelector('.result-checkin').textContent = `Checkin: ${reserva.checkin.data}`
     }
-    if(localStorage.getItem('checkin')){
-        document.getElementById('result-checkout').textContent = `Checkout: ${localStorage.getItem('checkout')}`
+    if(reserva.checkout.data){
+        document.querySelector('.result-checkout').textContent = `Checkout: ${reserva.checkout.data}`
     }
-    if(localStorage.getItem('numPessoas')!==null){
-        document.getElementById('result-pessoas').textContent = `Pessoas: ${localStorage.getItem('numPessoas')}`
+    if(reserva.adultos){
+        document.querySelector('.result-pessoas').textContent = `Pessoas: ${reserva.adultos + reserva.criancas}`
     }
     if(localStorage.getItem('totalServices')!==null){
         document.getElementById('services-text').textContent = `${localStorage.getItem('totalServices')}`

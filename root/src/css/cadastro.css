@@ -1,0 +1,48 @@
+.container-tabela {
+    width: 100%;
+    height: 100%;
+    display: auto;
+}
+
+
+table {
+    table-layout: auto;
+    width: 60%;
+    background-color: var(--background-color);
+    height: auto;
+    margin: auto;
+    text-align: left;
+    border-spacing: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+table tr th {
+    background-color: var(--green-default);
+    text-decoration: dashed;
+    color: white;
+    text-align: center;
+}
+.container-footer{
+    display: flex;
+    width: 100%;
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+        
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--green-default);
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}

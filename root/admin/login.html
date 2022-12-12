@@ -12,22 +12,26 @@
 
 <body class="flex">
     <main>
-        <!-- <header>
-            <img width="300" src="../images/Hotel_logo.jpg" alt="logo" id="logo-img">
-        </header> -->
+
         <section class="form-container">
             <h1>Login | Adm</h1>
-            <form class="flex" action="./home.html" method="get">
+            <form class="flex" method="post">
                 <div class="input-container">
-                    <input type="text" name="username" id="username" placeholder="nome" required>
-                    <input type="email" name="email" id="email" placeholder="e-mail" required>
+                    <div class="error-label-container">
+                        <label for="email" class="validLabel"></label>
+                        <input required type="email" name="email" placeholder="Email:">
+                    </div>
+                    <div class="error-label-container">
+                        <label for="password" class="validLabel"></label>
+                        <input required type="password" name="password" placeholder="Senha:">
+                    </div>
                 </div>
-                <button>Confirmar</button>
-                <a href="">Esqueceu sua senha ?</a>
+                <button class="green-button">Confirmar</button>
+                <a class="link" href="#">Esqueceu sua senha ?</a>
             </form>
         </section>
-        <!-- <footer></footer> -->
     </main>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
